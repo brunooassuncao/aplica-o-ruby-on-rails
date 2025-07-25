@@ -1,0 +1,10 @@
+<h1>Bem vindo ao meu mundo</h1>
+<h2>de cavalo e vaquejada</h2>
+
+<% @posts.each do |post| %>
+<% if post.content?%>
+  <p> <%= link_to post.title, post %> </p>
+<% end %>
+<% end %>
+
+<%= link_to "Posts", posts_path %>
